@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css//style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>lOGISTEC</title>
+</head>
+<body>
+    <header class="logistec-header">
+        <div class="container">
+            <div class="logistec-top-header d-none d-lg-flex justify-content-between align-items-center">
+                <ul class="d-flex justify-content-start align-items-center list-unstyled mb-2 text-white gap-3">
+                    <li><a href="#"><i class="bi bi-clock me-2"></i>Mon - Sat: 8 am - 5 pm, Sunday: CLOSED</a></li>
+                    <li><a href="#"><i class="bi bi-telephone-forward me-2"></i>1-888-452-1505</a></li>
+                    <li><a href="#"><i class="bi bi-geo-alt me-2"></i>380 St Kilda Road, Australia</a></li>
+                </ul>
+                <ul class="d-flex justify-content-start align-items-center list-unstyled mb-2 text-white logistec-socials">
+                    <li><a href="#">
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.27734 14.875V7.875H0.527344V5.46875H2.27734V4.04688C2.27734 2.97135 2.47786 2.17839 2.87891 1.66797C3.27995 1.13932 4.02734 0.875 5.12109 0.875H7.52734V3.28125H5.85938C5.4401 3.28125 5.17578 3.35417 5.06641 3.5C4.95703 3.64583 4.90234 3.90104 4.90234 4.26562V5.46875H7.52734L7.28125 7.875H4.90234V14.875H2.27734Z" fill="#0F1B24"/>
+                        </svg>                                
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.6445 0.40625C13.4258 1.08073 13.0065 1.60938 12.3867 1.99219C12.9518 1.91927 13.4987 1.76432 14.0273 1.52734C13.6445 2.11068 13.1706 2.61198 12.6055 3.03125C12.6055 3.14062 12.6055 3.25911 12.6055 3.38672C12.6055 4.35286 12.4232 5.31901 12.0586 6.28516C11.694 7.23307 11.1745 8.10807 10.5 8.91016C9.84375 9.69401 8.98698 10.332 7.92969 10.8242C6.8724 11.3164 5.70573 11.5625 4.42969 11.5625C2.84375 11.5625 1.3763 11.1341 0.0273438 10.2773C0.264323 10.2956 0.492188 10.3047 0.710938 10.3047C2.04167 10.3047 3.22656 9.89453 4.26562 9.07422C3.64583 9.07422 3.08984 8.89193 2.59766 8.52734C2.1237 8.14453 1.78646 7.66146 1.58594 7.07812C1.76823 7.11458 1.95052 7.13281 2.13281 7.13281C2.38802 7.13281 2.64323 7.10547 2.89844 7.05078C2.22396 6.90495 1.66797 6.56771 1.23047 6.03906C0.811198 5.51042 0.601562 4.90885 0.601562 4.23438V4.17969C1.0026 4.41667 1.43099 4.53516 1.88672 4.53516C1.02995 3.97005 0.601562 3.17708 0.601562 2.15625C0.601562 1.6276 0.738281 1.14453 1.01172 0.707031C1.72266 1.60026 2.58854 2.3112 3.60938 2.83984C4.64844 3.36849 5.7513 3.66016 6.91797 3.71484C6.86328 3.49609 6.83594 3.27734 6.83594 3.05859C6.83594 2.27474 7.11849 1.60026 7.68359 1.03516C8.2487 0.470052 8.92318 0.1875 9.70703 0.1875C10.5456 0.1875 11.2474 0.488281 11.8125 1.08984C12.4688 0.96224 13.0794 0.734375 13.6445 0.40625Z" fill="#0F1B24"/>
+                        </svg>                                
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.52734 8.96875C1.14193 8.65885 0.485677 7.58333 0.558594 5.74219C0.595052 4.46615 1.08724 3.38151 2.03516 2.48828C2.98307 1.57682 4.06771 1.05729 5.28906 0.929688C6.82031 0.747396 8.16927 1.01172 9.33594 1.72266C10.5208 2.41536 11.2044 3.42708 11.3867 4.75781C11.5326 5.8151 11.4505 6.83594 11.1406 7.82031C10.8307 8.80469 10.293 9.60677 9.52734 10.2266C8.77995 10.8464 7.90495 11.1107 6.90234 11.0195C6.70182 11.0013 6.51042 10.9648 6.32812 10.9102C6.16406 10.8372 6.02734 10.7734 5.91797 10.7188C5.80859 10.6458 5.66276 10.5456 5.48047 10.418C5.29818 10.2904 5.15234 10.1992 5.04297 10.1445C4.80599 11.3294 4.53255 12.3047 4.22266 13.0703C3.93099 13.8359 3.48438 14.4375 2.88281 14.875C2.82812 14.2005 2.80078 13.6445 2.80078 13.207C2.80078 12.7695 2.84635 12.2591 2.9375 11.6758C3.04688 11.0924 3.14714 10.6094 3.23828 10.2266C3.34766 9.84375 3.47526 9.37891 3.62109 8.83203C3.76693 8.28516 3.8763 7.82943 3.94922 7.46484C3.76693 7.11849 3.67578 6.71745 3.67578 6.26172C3.67578 5.78776 3.7487 5.36849 3.89453 5.00391C4.05859 4.62109 4.30469 4.32943 4.63281 4.12891C4.97917 3.92839 5.35286 3.90104 5.75391 4.04688C6.13672 4.19271 6.34635 4.47526 6.38281 4.89453C6.41927 5.29557 6.35547 5.74219 6.19141 6.23438C6.02734 6.70833 5.8724 7.18229 5.72656 7.65625C5.58073 8.13021 5.5625 8.54948 5.67188 8.91406C5.78125 9.27865 6.07292 9.50651 6.54688 9.59766C7.1849 9.72526 7.75 9.54297 8.24219 9.05078C8.7526 8.55859 9.09896 7.95703 9.28125 7.24609C9.48177 6.51693 9.53646 5.76042 9.44531 4.97656C9.35417 4.17448 9.10807 3.5638 8.70703 3.14453C8.23307 2.67057 7.67708 2.36068 7.03906 2.21484C6.40104 2.06901 5.78125 2.09635 5.17969 2.29688C4.57812 2.4974 4.02214 2.78906 3.51172 3.17188C3.01953 3.55469 2.64583 4.0651 2.39062 4.70312C2.13542 5.32292 2.0625 5.97005 2.17188 6.64453C2.1901 6.82682 2.25391 7.01823 2.36328 7.21875C2.47266 7.40104 2.5638 7.55599 2.63672 7.68359C2.72786 7.8112 2.77344 7.99349 2.77344 8.23047C2.77344 8.44922 2.69141 8.69531 2.52734 8.96875Z" fill="#0F1B24"/>
+                        </svg>                                
+                    </a></li>
+                    <li><a href="#">
+                        <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.03906 4.05859C9.22135 2.8737 9.85026 1.96224 10.9258 1.32422C11.9648 0.704427 12.9219 0.576823 13.7969 0.941406C14.7995 1.34245 15.1732 2.26302 14.918 3.70312C14.7357 4.72396 14.362 5.76302 13.7969 6.82031C13.2318 7.85938 12.5938 8.77083 11.8828 9.55469C11.1719 10.3385 10.5247 10.9948 9.94141 11.5234C9.35807 12.0339 8.86589 12.4258 8.46484 12.6992C8.02734 12.9909 7.60807 13.0729 7.20703 12.9453C6.80599 12.8177 6.45964 12.6263 6.16797 12.3711C5.89453 12.0977 5.67578 11.7878 5.51172 11.4414C5.36589 11.1315 4.96484 9.91927 4.30859 7.80469C3.67057 5.6901 3.27865 4.55078 3.13281 4.38672C3.0599 4.29557 2.95052 4.25 2.80469 4.25C2.67708 4.25 2.54948 4.27734 2.42188 4.33203C2.29427 4.38672 2.14844 4.45964 1.98438 4.55078C1.83854 4.64193 1.73828 4.70573 1.68359 4.74219C1.64714 4.77865 1.61068 4.80599 1.57422 4.82422L1 4.08594C0.981771 4.06771 1.19141 3.83073 1.62891 3.375C2.08464 2.90104 2.65885 2.39974 3.35156 1.87109C4.04427 1.32422 4.65495 0.996094 5.18359 0.886719C5.54818 0.813802 5.85807 0.86849 6.11328 1.05078C6.38672 1.21484 6.59635 1.4974 6.74219 1.89844C6.88802 2.29948 6.9974 2.69141 7.07031 3.07422C7.16146 3.45703 7.2526 3.92188 7.34375 4.46875C7.4349 5.01562 7.50781 5.42578 7.5625 5.69922C7.81771 6.70182 8.02734 7.42188 8.19141 7.85938C8.35547 8.27865 8.52865 8.48828 8.71094 8.48828C9.11198 8.48828 9.75911 7.64974 10.6523 5.97266C10.9076 5.44401 11.0078 4.97917 10.9531 4.57812C10.9167 4.17708 10.7161 3.91276 10.3516 3.78516C9.98698 3.65755 9.54948 3.7487 9.03906 4.05859Z" fill="#0F1B24"/>
+                        </svg>                                
+                    </a></li>
+                </ul>
+            </div>
+            <div class="logistec-main-header d-flex justify-content-between align-items-center">
+                <div class="logistec-logo">
+                    <img src="assets/logistec-logo.png" alt="logistec logo" class="img-fluid">
+                </div>
+                <div>
+                    <nav class="logistec-nav">
+                        <ul class="d-flex mt-3 mt-lg-0 flex-column flex-lg-row justify-content-between align-items-lg-center align-items-stretch list-unstyled mb-0 gap-2 gap-lg-4">
+                            <li><a href="#" class="logistec-nav-link active">Home</a></li>
+                            <li><a href="#" class="logistec-nav-link">About Us</a></li>
+                            <li><a href="#" class="logistec-nav-link">Service</a></li>
+                            <li><a href="#" class="logistec-nav-link">Pages</a></li>
+                            <li><a href="#" class="logistec-nav-link">Blog</a></li>
+                            <li><a href="#" class="logistec-nav-link">Content</a></li>
+                        </ul>
+                        <a href="#" class="btn rounded-0 btn-logistec-dark d-block d-lg-none my-3">Request A Quoite</a>
+                    </nav>
+                   <a href="#" class="d-block d-lg-none" id="memuBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" fill="none">
+                        <path d="M0 8.15797C0.13625 7.9361 0.245 7.68985 0.41625 7.4986C0.634376 7.25547 0.949376 7.1911 1.2725 7.1911C1.63188 7.1911 1.99063 7.1911 2.35 7.1911C9.06439 7.1911 15.7794 7.1961 22.4938 7.1836C23.2394 7.18235 23.7625 7.42485 24 8.15797C24 8.31423 24 8.46985 24 8.6261C23.9732 8.68922 23.945 8.75172 23.9194 8.81547C23.7425 9.24798 23.425 9.50485 22.9607 9.5736C22.8763 9.5861 22.79 9.59235 22.7044 9.59235C15.5688 9.59298 8.43251 9.59298 1.29688 9.5936C0.619376 9.5936 0.21 9.24548 0.000625001 8.6261C0 8.46985 0 8.31423 0 8.15797Z" fill="#fe5624"></path>
+                        <path d="M24.0004 1.42055C23.8491 1.90617 23.5666 2.26242 23.0435 2.37367C22.9379 2.39617 22.8266 2.4018 22.7185 2.4018C17.571 2.40305 12.4229 2.40305 7.27537 2.40242C6.63099 2.40242 6.16287 2.0418 6.02849 1.45117C5.90849 0.924298 6.17537 0.352422 6.68162 0.134922C6.88162 0.0492966 7.11912 0.0161716 7.33974 0.0155466C10.6597 0.00804656 13.9791 0.0105466 17.2991 0.0105466C19.0254 0.0105466 20.7523 0.0317966 22.4779 0.000546551C23.226 -0.0132035 23.746 0.230547 24.0004 0.951798C24.0004 1.10867 24.0004 1.2643 24.0004 1.42055Z" fill="#0F1B24"></path>
+                        <path d="M24.0005 15.8322C23.933 15.9697 23.8798 16.1172 23.7942 16.2429C23.5542 16.5966 23.2136 16.7741 22.783 16.7741C21.7292 16.7741 20.6748 16.7741 19.6211 16.7741C17.0992 16.7741 14.578 16.7754 12.0561 16.7729C11.3986 16.7722 10.9092 16.3672 10.8186 15.7616C10.7111 15.0422 11.2404 14.4029 11.9692 14.3841C12.3592 14.3741 12.7498 14.3816 13.1405 14.3816C16.2711 14.3816 19.4017 14.3816 22.5323 14.3816C23.3886 14.3816 23.6767 14.5747 24.0005 15.3641C24.0005 15.5204 24.0005 15.6766 24.0005 15.8322Z" fill="#0F1B24"></path>
+            </svg>
+                   </a>
+                </div>
+                <a href="#" class="btn rounded-0 btn-logistec-dark d-none d-lg-block">Request A Quoite</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="logistec-hero-section">
+            <div class="container">
+             <div class="row">
+                <div class="col-xxl-6 col-lg-8">
+                    <h1>Fast & Trusted Transportation service.</h1>
+                    <p>We provide services in the field of road, sea, rail, air transport and a full range of warehousing services.</p>
+                    <a href="#" class="btn rounded-0 btn-logistec-primary d-inline-flex justify-content-start align-items-center gap-1">Explore More <i class="bi bi-chevron-right"></i></a>
+                </div>
+            </div>
+           </div>
+        </section>
+
+        <section class="logistec-client-section logistec-section-padding pb-2">
+            <div class="container">
+                <div class="swiper-container clientSlider">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <img src="assets/images/client/client-img-01.png" alt="Slide 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client/client-img-02.png" alt="Slide 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client/client-img-03.png" alt="Slide 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/client/client-img-04.png" alt="Slide 4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="logistec-outports-section logistec-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="logistec-top-heading">Why Outports</h3>
+                        <h2 class="logistec-title">Why Should You Choose our Service, Here Are The Advantages Offer</h2>
+                        <p class="logistec-para mb-lg-5 mb-3">Providing an independent advice and identifying the right fit for you. Services are sourced and procured based.</p>
+                        <a href="#" class="btn rounded-0 btn-logistec-primary">Get a Free Quoite</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="logistec-outports-slider mt-5 mt-lg-0">
+                            <div class="card rounded-0">
+                                <div class="row">
+                                    <div class="col-3 col-xl-2">
+                                        <img src="assets/images/outports/safe-packing-img.png" class="img-fluid" alt="safe packing">
+                                    </div>
+                                    <div class="col-9 col-xl-10 content">
+                                        <h4 class="logistec-sub-heading">Safe Packing</h4>
+                                        <p class="logistec-para mb-0">Wherever your cargo is going, we can arrange the shipment for you and remain.</p>
+                                        <img src="assets/images/outports/count-1-img.png" alt="count 1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-0">
+                                <div class="row">
+                                    <div class="col-3 col-xl-2">
+                                        <img src="assets/images/outports/ship-everywhere-img.png" class="img-fluid" alt="ship everywhere">
+                                    </div>
+                                    <div class="col-9 col-xl-10 content">
+                                        <h4 class="logistec-sub-heading">Ship Everywhere</h4>
+                                        <p class="logistec-para mb-0">Wherever your cargo is going, we can arrange the shipment for you and remain.</p>
+                                        <img src="assets/images/outports/count-2-img.png" alt="count 2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-0">
+                                <div class="row">
+                                    <div class="col-3 col-xl-2">
+                                        <img src="assets/images/outports/in-time-delivery-img.png" class="img-fluid" alt="in time delivery">
+                                    </div>
+                                    <div class="col-9 col-xl-10 content">
+                                        <h4 class="logistec-sub-heading">Fastest Shipping </h4>
+                                        <p class="logistec-para mb-0">Wherever your cargo is going, we can arrange the shipment for you and remain.</p>
+                                        <img src="assets/images/outports/count-3-img.png" alt="count 3">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card rounded-0">
+                                <div class="row">
+                                    <div class="col-3 col-xl-2">
+                                        <img src="assets/images/outports/fastest-shipping-img.png" class="img-fluid" alt="fastest shipping">
+                                    </div>
+                                    <div class="col-9 col-xl-10 content">
+                                        <h4 class="logistec-sub-heading">Safe Packing</h4>
+                                        <p class="logistec-para mb-0">Wherever your cargo is going, we can arrange the shipment for you and remain.</p>
+                                        <img src="assets/images/outports/count-4-img.png" alt="count 4">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistec-about-section logistec-section-padding">
+            <div class="container position-relative logistec-z-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <img src="assets/images/digital-trusted-transport-logistic-company-img.png" class="img-fluid" alt="digital trusted transport logistic company">
+                    </div>
+                    <div class="col-lg-6 mt-5 mt-lg-0">
+                        <h3 class="logistec-top-heading">About Us</h3>
+                        <h2 class="logistec-title">Digital Trusted Transport Logistic Company</h2>
+                        <p class="logistec-para mb-xxl-5">There are many variations of passages of but the majority have in some form, by injected humou or words which don't look even slightly believable of but the majority have suffered</p>
+                        <div class="row slider g-3">
+                            <div class="col-md-4">
+                                <div class="slide">
+                                    <img src="assets/images/about/global-service-img.png" alt="global service">
+                                    <h4 class="mb-0 mt-3">Global Service</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="slide">
+                                    <img src="assets/images/about/local-service-img.png" alt="local service">
+                                    <h4 class="mb-0 mt-3">Local Service</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="slide">
+                                    <img src="assets/images/about/free-shipping-img.png" alt="free shipping">
+                                    <h4 class="mb-0 mt-3">Free Shipping</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/images/doted-path-img.png" class="logistec-doted-path" alt="doted path">
+        </section>
+
+        <section class="logistec-process-section logistec-section-padding pb-2">
+            <h3 class="logistec-top-heading text-center">Our Work Process</h3>
+            <h2 class="logistec-title text-center">Way To Reach Success</h2>
+            <div class="container">
+                <div class="row slider g-3">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="slide">
+                            <img src="assets/images/process/enter-your-and-product-details-img.png" class="img-fluid" alt="enter your and product details">
+                            <span>1</span>
+                        </div>
+                        <h4 class="logistec-sub-heading text-center mt-3">Enter your & product details</h4>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="slide">
+                            <img src="assets/images/process/pay-your-service-charges-img.png" class="img-fluid" alt="pay your service charges">
+                            <span>2</span>
+                        </div>
+                        <h4 class="logistec-sub-heading text-center mt-3">Pay your service charges</h4>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="slide">
+                            <img src="assets/images/process/ready-to-send-your-goods-img.png" class="img-fluid" alt="ready to sendyour goods">
+                            <span>3</span>
+                        </div>
+                        <h4 class="logistec-sub-heading text-center mt-3">Ready to send your goods</h4>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="slide">
+                            <img src="assets/images/process/online-booking-img.png" class="img-fluid" alt="online booking">
+                            <span>4</span>
+                        </div>
+                        <h4 class="logistec-sub-heading text-center mt-3">Online Booking</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistec-portfolio-section logistec-section-padding">
+            <div class="container">
+                <div class="d-flex flex-sm-row flex-column justify-content-between align-items-center">
+                    <div class="mb-3 mb-md-0 text-center text-sm-start">
+                        <h3 class="logistec-top-heading">Portfolio</h3>
+                        <h2 class="logistec-title">Featured Project</h2>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center gap-3">
+                        <div class="swiper-portfolioSlider-prev"><i class="bi bi-chevron-left"></i></div>
+                        <div class="swiper-portfolioSlider-next"><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="swiper-container portfolioSlider">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <img src="assets/images/portfolio/portfolio-img-01.png" class="img-fluid" alt="Slide 1">
+                            <div class="content">
+                                <div>
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i></a>
+                                </div>     
+                                <div>
+                                    <span>Distribution</span>
+                                    <h4 class="logistec-sub-heading mb-0 text-white mt-2">Shipping Transport</h4>
+                                </div>                           
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/portfolio/portfolio-img-02.png" class="img-fluid" alt="Slide 2">
+                            <div class="content">
+                                <div>
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i></a>
+                                </div>     
+                                <div>
+                                    <span>Distribution</span>
+                                    <h4 class="logistec-sub-heading mb-0 text-white mt-2">Shipping Transport</h4>
+                                </div>                           
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/portfolio/portfolio-img-03.png" class="img-fluid" alt="Slide 3">
+                            <div class="content">
+                                <div>
+                                    <a href="#"><i class="bi bi-arrow-right-short"></i></a>
+                                </div>     
+                                <div>
+                                    <span>Distribution</span>
+                                    <h4 class="logistec-sub-heading mb-0 text-white mt-2">Shipping Transport</h4>
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistec-faq-section logistec-section-padding pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-lg-6">
+                        <h3 class="logistec-top-heading">Frequently Ask Questions</h3>
+                        <h2 class="logistec-title">What Mostly People Ask Us About</h2>
+
+                        <div class="logistec-faq-slider">
+                            <div class="accordion accordion-flush d-flex flex-column gap-3" id="logistecFaqAccordion">
+                                <div class="accordion-item border-bottom-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        Can i specify a delivery date when ordering?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#logistecFaqAccordion">
+                                    <div class="accordion-body logistec-para">Professionally drive extensive growth strategies and B2B ROI. Holisticly productivate backward-compatible partnerships after user.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item border-bottom-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                        What is off page seo link building?
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#logistecFaqAccordion">
+                                    <div class="accordion-body logistec-para">Professionally drive extensive growth strategies and B2B ROI. Holisticly productivate backward-compatible partnerships after user.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item border-bottom-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        How investing in dependend incer
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#logistecFaqAccordion">
+                                    <div class="accordion-body logistec-para">Professionally drive extensive growth strategies and B2B ROI. Holisticly productivate backward-compatible partnerships after user.</div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item border-bottom-0">
+                                  <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                        High Quality Data Security
+                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#logistecFaqAccordion">
+                                    <div class="accordion-body logistec-para">Professionally drive extensive growth strategies and B2B ROI. Holisticly productivate backward-compatible partnerships after user.</div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-6 align-self-end align-self-lg-start">
+                        <img src="assets/images/what-mostly-people-ask-us-about-img.png" class="img-fluid mt-3 md-md-0 ps-lg-5" alt="what mostly people ask us about">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistec-team-section logistec-section-padding">
+            <h3 class="logistec-top-heading text-center">Dedicated Team</h3>
+            <h2 class="logistec-title text-center">Our Transport Expert Team</h2>
+            <div class="container">
+                <div class="row mt-5 flex-nowrap flex-md-wrap slider">
+                    <div class="col-md-4">
+                        <div class="card rounded-0 border-0">
+                          <img class="img-fluid" src="assets/images/team/jonathan-leon-img.png" alt="jonathan leon">
+                          <div class="card-body">
+                            <h4 class="card-title logistec-sub-heading">Jonathan Leon </h4>
+                            <p class="card-text logistec-para">Chief Creative Officer</p>
+                            <ul class="d-flex justify-content-start align-items-center list-unstyled gap-3 logistec-socials mb-0">
+                                <li><a href="#">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.27734 14.8751V7.87512H0.527344V5.46887H2.27734V4.047C2.27734 2.97148 2.47786 2.17851 2.87891 1.66809C3.27995 1.13944 4.02734 0.875122 5.12109 0.875122H7.52734V3.28137H5.85938C5.4401 3.28137 5.17578 3.35429 5.06641 3.50012C4.95703 3.64596 4.90234 3.90116 4.90234 4.26575V5.46887H7.52734L7.28125 7.87512H4.90234V14.8751H2.27734Z" fill="#757575"/>
+                                    </svg>
+                                </a></i></li>
+                                <li><a href="#">
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6445 0.406372C13.4258 1.08085 13.0065 1.6095 12.3867 1.99231C12.9518 1.91939 13.4987 1.76444 14.0273 1.52747C13.6445 2.1108 13.1706 2.6121 12.6055 3.03137C12.6055 3.14075 12.6055 3.25924 12.6055 3.38684C12.6055 4.35299 12.4232 5.31913 12.0586 6.28528C11.694 7.23319 11.1745 8.10819 10.5 8.91028C9.84375 9.69413 8.98698 10.3322 7.92969 10.8243C6.8724 11.3165 5.70573 11.5626 4.42969 11.5626C2.84375 11.5626 1.3763 11.1342 0.0273438 10.2775C0.264323 10.2957 0.492188 10.3048 0.710938 10.3048C2.04167 10.3048 3.22656 9.89465 4.26562 9.07434C3.64583 9.07434 3.08984 8.89205 2.59766 8.52747C2.1237 8.14465 1.78646 7.66158 1.58594 7.07825C1.76823 7.11471 1.95052 7.13293 2.13281 7.13293C2.38802 7.13293 2.64323 7.10559 2.89844 7.0509C2.22396 6.90507 1.66797 6.56783 1.23047 6.03918C0.811198 5.51054 0.601562 4.90898 0.601562 4.2345V4.17981C1.0026 4.41679 1.43099 4.53528 1.88672 4.53528C1.02995 3.97017 0.601562 3.17721 0.601562 2.15637C0.601562 1.62773 0.738281 1.14465 1.01172 0.707153C1.72266 1.60038 2.58854 2.31132 3.60938 2.83997C4.64844 3.36861 5.7513 3.66028 6.91797 3.71497C6.86328 3.49622 6.83594 3.27747 6.83594 3.05872C6.83594 2.27486 7.11849 1.60038 7.68359 1.03528C8.2487 0.470174 8.92318 0.187622 9.70703 0.187622C10.5456 0.187622 11.2474 0.488403 11.8125 1.08997C12.4688 0.962362 13.0794 0.734497 13.6445 0.406372Z" fill="#757575"/>
+                                    </svg>
+                                </a></li>
+                                <li><a href="#">
+                                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.52734 8.96887C1.14193 8.65898 0.485677 7.58346 0.558594 5.74231C0.595052 4.46627 1.08724 3.38163 2.03516 2.4884C2.98307 1.57694 4.06771 1.05741 5.28906 0.92981C6.82031 0.747518 8.16927 1.01184 9.33594 1.72278C10.5208 2.41549 11.2044 3.42721 11.3867 4.75793C11.5326 5.81523 11.4505 6.83606 11.1406 7.82043C10.8307 8.80481 10.293 9.60689 9.52734 10.2267C8.77995 10.8465 7.90495 11.1108 6.90234 11.0197C6.70182 11.0014 6.51042 10.965 6.32812 10.9103C6.16406 10.8374 6.02734 10.7736 5.91797 10.7189C5.80859 10.646 5.66276 10.5457 5.48047 10.4181C5.29818 10.2905 5.15234 10.1993 5.04297 10.1447C4.80599 11.3295 4.53255 12.3048 4.22266 13.0704C3.93099 13.8361 3.48438 14.4376 2.88281 14.8751C2.82812 14.2006 2.80078 13.6447 2.80078 13.2072C2.80078 12.7697 2.84635 12.2592 2.9375 11.6759C3.04688 11.0926 3.14714 10.6095 3.23828 10.2267C3.34766 9.84387 3.47526 9.37903 3.62109 8.83215C3.76693 8.28528 3.8763 7.82955 3.94922 7.46497C3.76693 7.11861 3.67578 6.71757 3.67578 6.26184C3.67578 5.78788 3.7487 5.36861 3.89453 5.00403C4.05859 4.62122 4.30469 4.32955 4.63281 4.12903C4.97917 3.92851 5.35286 3.90116 5.75391 4.047C6.13672 4.19283 6.34635 4.47538 6.38281 4.89465C6.41927 5.29569 6.35547 5.74231 6.19141 6.2345C6.02734 6.70846 5.8724 7.18241 5.72656 7.65637C5.58073 8.13033 5.5625 8.5496 5.67188 8.91418C5.78125 9.27877 6.07292 9.50663 6.54688 9.59778C7.1849 9.72538 7.75 9.54309 8.24219 9.0509C8.7526 8.55872 9.09896 7.95715 9.28125 7.24622C9.48177 6.51705 9.53646 5.76054 9.44531 4.97668C9.35417 4.1746 9.10807 3.56392 8.70703 3.14465C8.23307 2.67069 7.67708 2.3608 7.03906 2.21497C6.40104 2.06913 5.78125 2.09648 5.17969 2.297C4.57812 2.49752 4.02214 2.78918 3.51172 3.172C3.01953 3.55481 2.64583 4.06523 2.39062 4.70325C2.13542 5.32304 2.0625 5.97017 2.17188 6.64465C2.1901 6.82694 2.25391 7.01835 2.36328 7.21887C2.47266 7.40116 2.5638 7.55611 2.63672 7.68372C2.72786 7.81132 2.77344 7.99361 2.77344 8.23059C2.77344 8.44934 2.69141 8.69543 2.52734 8.96887Z" fill="#757575"/>
+                                    </svg>  
+                                </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card rounded-0 border-0">
+                          <img class="img-fluid" src="assets/images/team/sarah-aileah-img.png" alt="sarah aileah">
+                          <div class="card-body">
+                            <h4 class="card-title logistec-sub-heading">Sarah Aileah</h4>
+                            <p class="card-text logistec-para">Co Founderr</p>
+                            <ul class="d-flex justify-content-start align-items-center list-unstyled gap-3 logistec-socials mb-0">
+                                <li><a href="#">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.27734 14.8751V7.87512H0.527344V5.46887H2.27734V4.047C2.27734 2.97148 2.47786 2.17851 2.87891 1.66809C3.27995 1.13944 4.02734 0.875122 5.12109 0.875122H7.52734V3.28137H5.85938C5.4401 3.28137 5.17578 3.35429 5.06641 3.50012C4.95703 3.64596 4.90234 3.90116 4.90234 4.26575V5.46887H7.52734L7.28125 7.87512H4.90234V14.8751H2.27734Z" fill="#757575"/>
+                                    </svg>
+                                </a></i></li>
+                                <li><a href="#">
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6445 0.406372C13.4258 1.08085 13.0065 1.6095 12.3867 1.99231C12.9518 1.91939 13.4987 1.76444 14.0273 1.52747C13.6445 2.1108 13.1706 2.6121 12.6055 3.03137C12.6055 3.14075 12.6055 3.25924 12.6055 3.38684C12.6055 4.35299 12.4232 5.31913 12.0586 6.28528C11.694 7.23319 11.1745 8.10819 10.5 8.91028C9.84375 9.69413 8.98698 10.3322 7.92969 10.8243C6.8724 11.3165 5.70573 11.5626 4.42969 11.5626C2.84375 11.5626 1.3763 11.1342 0.0273438 10.2775C0.264323 10.2957 0.492188 10.3048 0.710938 10.3048C2.04167 10.3048 3.22656 9.89465 4.26562 9.07434C3.64583 9.07434 3.08984 8.89205 2.59766 8.52747C2.1237 8.14465 1.78646 7.66158 1.58594 7.07825C1.76823 7.11471 1.95052 7.13293 2.13281 7.13293C2.38802 7.13293 2.64323 7.10559 2.89844 7.0509C2.22396 6.90507 1.66797 6.56783 1.23047 6.03918C0.811198 5.51054 0.601562 4.90898 0.601562 4.2345V4.17981C1.0026 4.41679 1.43099 4.53528 1.88672 4.53528C1.02995 3.97017 0.601562 3.17721 0.601562 2.15637C0.601562 1.62773 0.738281 1.14465 1.01172 0.707153C1.72266 1.60038 2.58854 2.31132 3.60938 2.83997C4.64844 3.36861 5.7513 3.66028 6.91797 3.71497C6.86328 3.49622 6.83594 3.27747 6.83594 3.05872C6.83594 2.27486 7.11849 1.60038 7.68359 1.03528C8.2487 0.470174 8.92318 0.187622 9.70703 0.187622C10.5456 0.187622 11.2474 0.488403 11.8125 1.08997C12.4688 0.962362 13.0794 0.734497 13.6445 0.406372Z" fill="#757575"/>
+                                    </svg>
+                                </a></li>
+                                <li><a href="#">
+                                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.52734 8.96887C1.14193 8.65898 0.485677 7.58346 0.558594 5.74231C0.595052 4.46627 1.08724 3.38163 2.03516 2.4884C2.98307 1.57694 4.06771 1.05741 5.28906 0.92981C6.82031 0.747518 8.16927 1.01184 9.33594 1.72278C10.5208 2.41549 11.2044 3.42721 11.3867 4.75793C11.5326 5.81523 11.4505 6.83606 11.1406 7.82043C10.8307 8.80481 10.293 9.60689 9.52734 10.2267C8.77995 10.8465 7.90495 11.1108 6.90234 11.0197C6.70182 11.0014 6.51042 10.965 6.32812 10.9103C6.16406 10.8374 6.02734 10.7736 5.91797 10.7189C5.80859 10.646 5.66276 10.5457 5.48047 10.4181C5.29818 10.2905 5.15234 10.1993 5.04297 10.1447C4.80599 11.3295 4.53255 12.3048 4.22266 13.0704C3.93099 13.8361 3.48438 14.4376 2.88281 14.8751C2.82812 14.2006 2.80078 13.6447 2.80078 13.2072C2.80078 12.7697 2.84635 12.2592 2.9375 11.6759C3.04688 11.0926 3.14714 10.6095 3.23828 10.2267C3.34766 9.84387 3.47526 9.37903 3.62109 8.83215C3.76693 8.28528 3.8763 7.82955 3.94922 7.46497C3.76693 7.11861 3.67578 6.71757 3.67578 6.26184C3.67578 5.78788 3.7487 5.36861 3.89453 5.00403C4.05859 4.62122 4.30469 4.32955 4.63281 4.12903C4.97917 3.92851 5.35286 3.90116 5.75391 4.047C6.13672 4.19283 6.34635 4.47538 6.38281 4.89465C6.41927 5.29569 6.35547 5.74231 6.19141 6.2345C6.02734 6.70846 5.8724 7.18241 5.72656 7.65637C5.58073 8.13033 5.5625 8.5496 5.67188 8.91418C5.78125 9.27877 6.07292 9.50663 6.54688 9.59778C7.1849 9.72538 7.75 9.54309 8.24219 9.0509C8.7526 8.55872 9.09896 7.95715 9.28125 7.24622C9.48177 6.51705 9.53646 5.76054 9.44531 4.97668C9.35417 4.1746 9.10807 3.56392 8.70703 3.14465C8.23307 2.67069 7.67708 2.3608 7.03906 2.21497C6.40104 2.06913 5.78125 2.09648 5.17969 2.297C4.57812 2.49752 4.02214 2.78918 3.51172 3.172C3.01953 3.55481 2.64583 4.06523 2.39062 4.70325C2.13542 5.32304 2.0625 5.97017 2.17188 6.64465C2.1901 6.82694 2.25391 7.01835 2.36328 7.21887C2.47266 7.40116 2.5638 7.55611 2.63672 7.68372C2.72786 7.81132 2.77344 7.99361 2.77344 8.23059C2.77344 8.44934 2.69141 8.69543 2.52734 8.96887Z" fill="#757575"/>
+                                    </svg>  
+                                </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card rounded-0 border-0">
+                          <img class="img-fluid" src="assets/images/team/dean-johaness-img.png" alt="dean johaness">
+                          <div class="card-body">
+                            <h4 class="card-title logistec-sub-heading">Dean Johaness</h4>
+                            <p class="card-text logistec-para">Consultant</p>
+                            <ul class="d-flex justify-content-start align-items-center list-unstyled gap-3 logistec-socials mb-0">
+                                <li><a href="#">
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.27734 14.8751V7.87512H0.527344V5.46887H2.27734V4.047C2.27734 2.97148 2.47786 2.17851 2.87891 1.66809C3.27995 1.13944 4.02734 0.875122 5.12109 0.875122H7.52734V3.28137H5.85938C5.4401 3.28137 5.17578 3.35429 5.06641 3.50012C4.95703 3.64596 4.90234 3.90116 4.90234 4.26575V5.46887H7.52734L7.28125 7.87512H4.90234V14.8751H2.27734Z" fill="#757575"/>
+                                    </svg>
+                                </a></i></li>
+                                <li><a href="#">
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.6445 0.406372C13.4258 1.08085 13.0065 1.6095 12.3867 1.99231C12.9518 1.91939 13.4987 1.76444 14.0273 1.52747C13.6445 2.1108 13.1706 2.6121 12.6055 3.03137C12.6055 3.14075 12.6055 3.25924 12.6055 3.38684C12.6055 4.35299 12.4232 5.31913 12.0586 6.28528C11.694 7.23319 11.1745 8.10819 10.5 8.91028C9.84375 9.69413 8.98698 10.3322 7.92969 10.8243C6.8724 11.3165 5.70573 11.5626 4.42969 11.5626C2.84375 11.5626 1.3763 11.1342 0.0273438 10.2775C0.264323 10.2957 0.492188 10.3048 0.710938 10.3048C2.04167 10.3048 3.22656 9.89465 4.26562 9.07434C3.64583 9.07434 3.08984 8.89205 2.59766 8.52747C2.1237 8.14465 1.78646 7.66158 1.58594 7.07825C1.76823 7.11471 1.95052 7.13293 2.13281 7.13293C2.38802 7.13293 2.64323 7.10559 2.89844 7.0509C2.22396 6.90507 1.66797 6.56783 1.23047 6.03918C0.811198 5.51054 0.601562 4.90898 0.601562 4.2345V4.17981C1.0026 4.41679 1.43099 4.53528 1.88672 4.53528C1.02995 3.97017 0.601562 3.17721 0.601562 2.15637C0.601562 1.62773 0.738281 1.14465 1.01172 0.707153C1.72266 1.60038 2.58854 2.31132 3.60938 2.83997C4.64844 3.36861 5.7513 3.66028 6.91797 3.71497C6.86328 3.49622 6.83594 3.27747 6.83594 3.05872C6.83594 2.27486 7.11849 1.60038 7.68359 1.03528C8.2487 0.470174 8.92318 0.187622 9.70703 0.187622C10.5456 0.187622 11.2474 0.488403 11.8125 1.08997C12.4688 0.962362 13.0794 0.734497 13.6445 0.406372Z" fill="#757575"/>
+                                    </svg>
+                                </a></li>
+                                <li><a href="#">
+                                    <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2.52734 8.96887C1.14193 8.65898 0.485677 7.58346 0.558594 5.74231C0.595052 4.46627 1.08724 3.38163 2.03516 2.4884C2.98307 1.57694 4.06771 1.05741 5.28906 0.92981C6.82031 0.747518 8.16927 1.01184 9.33594 1.72278C10.5208 2.41549 11.2044 3.42721 11.3867 4.75793C11.5326 5.81523 11.4505 6.83606 11.1406 7.82043C10.8307 8.80481 10.293 9.60689 9.52734 10.2267C8.77995 10.8465 7.90495 11.1108 6.90234 11.0197C6.70182 11.0014 6.51042 10.965 6.32812 10.9103C6.16406 10.8374 6.02734 10.7736 5.91797 10.7189C5.80859 10.646 5.66276 10.5457 5.48047 10.4181C5.29818 10.2905 5.15234 10.1993 5.04297 10.1447C4.80599 11.3295 4.53255 12.3048 4.22266 13.0704C3.93099 13.8361 3.48438 14.4376 2.88281 14.8751C2.82812 14.2006 2.80078 13.6447 2.80078 13.2072C2.80078 12.7697 2.84635 12.2592 2.9375 11.6759C3.04688 11.0926 3.14714 10.6095 3.23828 10.2267C3.34766 9.84387 3.47526 9.37903 3.62109 8.83215C3.76693 8.28528 3.8763 7.82955 3.94922 7.46497C3.76693 7.11861 3.67578 6.71757 3.67578 6.26184C3.67578 5.78788 3.7487 5.36861 3.89453 5.00403C4.05859 4.62122 4.30469 4.32955 4.63281 4.12903C4.97917 3.92851 5.35286 3.90116 5.75391 4.047C6.13672 4.19283 6.34635 4.47538 6.38281 4.89465C6.41927 5.29569 6.35547 5.74231 6.19141 6.2345C6.02734 6.70846 5.8724 7.18241 5.72656 7.65637C5.58073 8.13033 5.5625 8.5496 5.67188 8.91418C5.78125 9.27877 6.07292 9.50663 6.54688 9.59778C7.1849 9.72538 7.75 9.54309 8.24219 9.0509C8.7526 8.55872 9.09896 7.95715 9.28125 7.24622C9.48177 6.51705 9.53646 5.76054 9.44531 4.97668C9.35417 4.1746 9.10807 3.56392 8.70703 3.14465C8.23307 2.67069 7.67708 2.3608 7.03906 2.21497C6.40104 2.06913 5.78125 2.09648 5.17969 2.297C4.57812 2.49752 4.02214 2.78918 3.51172 3.172C3.01953 3.55481 2.64583 4.06523 2.39062 4.70325C2.13542 5.32304 2.0625 5.97017 2.17188 6.64465C2.1901 6.82694 2.25391 7.01835 2.36328 7.21887C2.47266 7.40116 2.5638 7.55611 2.63672 7.68372C2.72786 7.81132 2.77344 7.99361 2.77344 8.23059C2.77344 8.44934 2.69141 8.69543 2.52734 8.96887Z" fill="#757575"/>
+                                    </svg>  
+                                </a></li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistec-testimonial-section logistec-section-padding">
+            <div class="container">
+                <h3 class="logistec-top-heading text-center text-white">Testimonial</h3>
+                <h2 class="logistec-title text-center text-white">What People and Clients Think About Us?</h2>
+                <div class="swiper-container testimonialSlider">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide">
+                            <div class="logistec-rating">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                            </div>
+                            <p class="logistec-para">Through gaining experience in various economic ods, our team are able to identify the best opportunities we are in good times or bad.</p>
+                            <div class="content">
+                                <div class="img-box">
+                                    <img src="assets/images/testimonial/porter-victoria-img.png" class="img-fluid" alt="porter victoria">
+                                </div>
+                                <div class="content-body">
+                                    <h4 class="logistec-sub-heading">Porter Victoria</h4>
+                                    <span class="logistec-para">CEO-Funder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="logistec-rating">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-half-img.svg" alt="star half">
+                            </div>
+                            <p class="logistec-para">Through gaining experience in various economic ods, our team are able to identify the best opportunities we are in good times or bad.</p>
+                            <div class="content">
+                                <div class="img-box">
+                                    <img src="assets/images/testimonial/ronald-richards-img.png" class="img-fluid" alt="ronald richards">
+                                </div>
+                                <div class="content-body">
+                                    <h4 class="logistec-sub-heading">Ronald Richards</h4>
+                                    <span class="logistec-para">Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="logistec-rating">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-full-img.svg" alt="star full">
+                                <img src="assets/images/star/star-empty-img.svg" alt="star empty">
+                            </div>
+                            <p class="logistec-para">Through gaining experience in various economic ods, our team are able to identify the best opportunities we are in good times or bad.</p>
+                            <div class="content">
+                                <div class="img-box">
+                                    <img src="assets/images/testimonial/anina-taylor-img.png" class="img-fluid" alt="anina taylor">
+                                </div>
+                                <div class="content-body">
+                                    <h4 class="logistec-sub-heading">Anina Taylor</h4>
+                                    <span class="logistec-para">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistec-news-section logistec-section-padding">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-7 col-lg-5 col-xxl-4">
+                        <h3 class="logistec-top-heading">News & Media</h3>
+                        <h2 class="logistec-title">News & Articles</h2>
+                        <p class="logistec-para mb-0">Family months lasted simple set nature of vulgar him. Picture for attempt.</p>
+                    </div>
+                    <div class="col-md-5 mt-3 mt-md-0 col-lg-5 col-xxl-4 text-end">
+                        <a href="#" class="btn btn-logistec-transparent rounded-0 d-inline-flex justify-content-start align-items-center gap-1">View All Post <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="row g-4 mt-4">
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0">
+                          <img class="img-fluid" src="assets/images/news/how-to-get-hired-in-the-logistic-industry-img.png" alt="how to get hired in the logistic industry">
+                          <div class="card-body">
+                           <div class="body-top">
+                            <ul class="d-flex justify-content-start align-items-center list-unstyled">
+                                <li><i class="bi bi-tag me-2"></i>Air Freight</li>
+                                <li><i class="bi bi-tag me-2"></i>3 Comment</li>
+                            </ul>
+                            <h4 class="logistec-sub-heading">How to Get Hired in the Logistic Industry.</h4>
+                           </div>
+                            <div class="body-bottom d-flex justify-content-between align-items-center">
+                                <a class="logistec-para text-decoration-none" href="#">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                                <div class="box">
+                                    <img src="assets/images/team/dean-johaness-img.png" alt="dean johaness">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0">
+                          <img class="img-fluid" src="assets/images/news/dont-get-stuck-with-the-rest-truck-with-img.png" alt="dont get stuck with the rest truck with">
+                          <div class="card-body">
+                           <div class="body-top">
+                            <ul class="d-flex justify-content-start align-items-center list-unstyled">
+                                <li><i class="bi bi-tag me-2"></i>Air Freight</li>
+                                <li><i class="bi bi-tag me-2"></i>3 Comment</li>
+                            </ul>
+                            <h4 class="logistec-sub-heading">Don't get stuck with the rest, truck with.</h4>
+                           </div>
+                            <div class="body-bottom d-flex justify-content-between align-items-center">
+                                <a class="logistec-para text-decoration-none" href="#">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                                <div class="box">
+                                    <img src="assets/images/team/jonathan-leon-img.png" alt="jonathan leon">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card rounded-0 border-0">
+                          <img class="img-fluid" src="assets/images/news/deserunt-mollitia-animid-est-laborum-dolorum-fuga-img.png" alt="deserunt mollitia animid est laborum dolorum fuga">
+                          <div class="card-body">
+                           <div class="body-top">
+                            <ul class="d-flex justify-content-start align-items-center list-unstyled">
+                                <li><i class="bi bi-tag me-2"></i>Air Freight</li>
+                                <li><i class="bi bi-tag me-2"></i>3 Comment</li>
+                            </ul>
+                            <h4 class="logistec-sub-heading">Deserunt mollitia animid est laborum dolorum fuga.</h4>
+                           </div>
+                            <div class="body-bottom d-flex justify-content-between align-items-center">
+                                <a class="logistec-para text-decoration-none" href="#">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                                <div class="box">
+                                    <img src="assets/images/team/sarah-aileah-img.png" alt="sarah aileah">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="logistec-contact-section logistec-section-padding">
+            <div class="container position-relative logistec-z-5">
+                <div class="row align-items-center">
+                    <div class="col-md-8 col-xxl-6">
+                        <h2 class="logistec-title text-white mb-0">Fastest & Secure Way to Get Transport Your Freight.</h2>
+                    </div>
+                    <div class="col-md-4 col-xxl-6 text-md-end text-center mt-3 mt-md-0">
+                        <a href="#" class="btn btn-logistec-white rounded-0">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="logistec-footer">
+        <div class="container position-relative logistec-z-5 text-center text-md-start">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logistec-logo mx-auto mx-md-0">
+                        <img src="assets/logistec-logo.png" class="img-fluid" alt="logistec logo">
+                    </div>
+                    <p class="logistec-para">Logistics solutions providers to the ecommerce industry in India have seen many-fold growth during the pandemic as consumers preferred.</p>
+                    <ul class="d-flex justify-content-md-start justify-content-center align-items-center list-unstyled logistec-socials">
+                        <li><a href="#">
+                            <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.27734 14.875V7.875H0.527344V5.46875H2.27734V4.04688C2.27734 2.97135 2.47786 2.17839 2.87891 1.66797C3.27995 1.13932 4.02734 0.875 5.12109 0.875H7.52734V3.28125H5.85938C5.4401 3.28125 5.17578 3.35417 5.06641 3.5C4.95703 3.64583 4.90234 3.90104 4.90234 4.26562V5.46875H7.52734L7.28125 7.875H4.90234V14.875H2.27734Z" fill="#0F1B24"/>
+                            </svg>                                
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.6445 0.40625C13.4258 1.08073 13.0065 1.60938 12.3867 1.99219C12.9518 1.91927 13.4987 1.76432 14.0273 1.52734C13.6445 2.11068 13.1706 2.61198 12.6055 3.03125C12.6055 3.14062 12.6055 3.25911 12.6055 3.38672C12.6055 4.35286 12.4232 5.31901 12.0586 6.28516C11.694 7.23307 11.1745 8.10807 10.5 8.91016C9.84375 9.69401 8.98698 10.332 7.92969 10.8242C6.8724 11.3164 5.70573 11.5625 4.42969 11.5625C2.84375 11.5625 1.3763 11.1341 0.0273438 10.2773C0.264323 10.2956 0.492188 10.3047 0.710938 10.3047C2.04167 10.3047 3.22656 9.89453 4.26562 9.07422C3.64583 9.07422 3.08984 8.89193 2.59766 8.52734C2.1237 8.14453 1.78646 7.66146 1.58594 7.07812C1.76823 7.11458 1.95052 7.13281 2.13281 7.13281C2.38802 7.13281 2.64323 7.10547 2.89844 7.05078C2.22396 6.90495 1.66797 6.56771 1.23047 6.03906C0.811198 5.51042 0.601562 4.90885 0.601562 4.23438V4.17969C1.0026 4.41667 1.43099 4.53516 1.88672 4.53516C1.02995 3.97005 0.601562 3.17708 0.601562 2.15625C0.601562 1.6276 0.738281 1.14453 1.01172 0.707031C1.72266 1.60026 2.58854 2.3112 3.60938 2.83984C4.64844 3.36849 5.7513 3.66016 6.91797 3.71484C6.86328 3.49609 6.83594 3.27734 6.83594 3.05859C6.83594 2.27474 7.11849 1.60026 7.68359 1.03516C8.2487 0.470052 8.92318 0.1875 9.70703 0.1875C10.5456 0.1875 11.2474 0.488281 11.8125 1.08984C12.4688 0.96224 13.0794 0.734375 13.6445 0.40625Z" fill="#0F1B24"/>
+                            </svg>                                
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="12" height="15" viewBox="0 0 12 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.52734 8.96875C1.14193 8.65885 0.485677 7.58333 0.558594 5.74219C0.595052 4.46615 1.08724 3.38151 2.03516 2.48828C2.98307 1.57682 4.06771 1.05729 5.28906 0.929688C6.82031 0.747396 8.16927 1.01172 9.33594 1.72266C10.5208 2.41536 11.2044 3.42708 11.3867 4.75781C11.5326 5.8151 11.4505 6.83594 11.1406 7.82031C10.8307 8.80469 10.293 9.60677 9.52734 10.2266C8.77995 10.8464 7.90495 11.1107 6.90234 11.0195C6.70182 11.0013 6.51042 10.9648 6.32812 10.9102C6.16406 10.8372 6.02734 10.7734 5.91797 10.7188C5.80859 10.6458 5.66276 10.5456 5.48047 10.418C5.29818 10.2904 5.15234 10.1992 5.04297 10.1445C4.80599 11.3294 4.53255 12.3047 4.22266 13.0703C3.93099 13.8359 3.48438 14.4375 2.88281 14.875C2.82812 14.2005 2.80078 13.6445 2.80078 13.207C2.80078 12.7695 2.84635 12.2591 2.9375 11.6758C3.04688 11.0924 3.14714 10.6094 3.23828 10.2266C3.34766 9.84375 3.47526 9.37891 3.62109 8.83203C3.76693 8.28516 3.8763 7.82943 3.94922 7.46484C3.76693 7.11849 3.67578 6.71745 3.67578 6.26172C3.67578 5.78776 3.7487 5.36849 3.89453 5.00391C4.05859 4.62109 4.30469 4.32943 4.63281 4.12891C4.97917 3.92839 5.35286 3.90104 5.75391 4.04688C6.13672 4.19271 6.34635 4.47526 6.38281 4.89453C6.41927 5.29557 6.35547 5.74219 6.19141 6.23438C6.02734 6.70833 5.8724 7.18229 5.72656 7.65625C5.58073 8.13021 5.5625 8.54948 5.67188 8.91406C5.78125 9.27865 6.07292 9.50651 6.54688 9.59766C7.1849 9.72526 7.75 9.54297 8.24219 9.05078C8.7526 8.55859 9.09896 7.95703 9.28125 7.24609C9.48177 6.51693 9.53646 5.76042 9.44531 4.97656C9.35417 4.17448 9.10807 3.5638 8.70703 3.14453C8.23307 2.67057 7.67708 2.36068 7.03906 2.21484C6.40104 2.06901 5.78125 2.09635 5.17969 2.29688C4.57812 2.4974 4.02214 2.78906 3.51172 3.17188C3.01953 3.55469 2.64583 4.0651 2.39062 4.70312C2.13542 5.32292 2.0625 5.97005 2.17188 6.64453C2.1901 6.82682 2.25391 7.01823 2.36328 7.21875C2.47266 7.40104 2.5638 7.55599 2.63672 7.68359C2.72786 7.8112 2.77344 7.99349 2.77344 8.23047C2.77344 8.44922 2.69141 8.69531 2.52734 8.96875Z" fill="#0F1B24"/>
+                            </svg>                                
+                        </a></li>
+                        <li><a href="#">
+                            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.03906 4.05859C9.22135 2.8737 9.85026 1.96224 10.9258 1.32422C11.9648 0.704427 12.9219 0.576823 13.7969 0.941406C14.7995 1.34245 15.1732 2.26302 14.918 3.70312C14.7357 4.72396 14.362 5.76302 13.7969 6.82031C13.2318 7.85938 12.5938 8.77083 11.8828 9.55469C11.1719 10.3385 10.5247 10.9948 9.94141 11.5234C9.35807 12.0339 8.86589 12.4258 8.46484 12.6992C8.02734 12.9909 7.60807 13.0729 7.20703 12.9453C6.80599 12.8177 6.45964 12.6263 6.16797 12.3711C5.89453 12.0977 5.67578 11.7878 5.51172 11.4414C5.36589 11.1315 4.96484 9.91927 4.30859 7.80469C3.67057 5.6901 3.27865 4.55078 3.13281 4.38672C3.0599 4.29557 2.95052 4.25 2.80469 4.25C2.67708 4.25 2.54948 4.27734 2.42188 4.33203C2.29427 4.38672 2.14844 4.45964 1.98438 4.55078C1.83854 4.64193 1.73828 4.70573 1.68359 4.74219C1.64714 4.77865 1.61068 4.80599 1.57422 4.82422L1 4.08594C0.981771 4.06771 1.19141 3.83073 1.62891 3.375C2.08464 2.90104 2.65885 2.39974 3.35156 1.87109C4.04427 1.32422 4.65495 0.996094 5.18359 0.886719C5.54818 0.813802 5.85807 0.86849 6.11328 1.05078C6.38672 1.21484 6.59635 1.4974 6.74219 1.89844C6.88802 2.29948 6.9974 2.69141 7.07031 3.07422C7.16146 3.45703 7.2526 3.92188 7.34375 4.46875C7.4349 5.01562 7.50781 5.42578 7.5625 5.69922C7.81771 6.70182 8.02734 7.42188 8.19141 7.85938C8.35547 8.27865 8.52865 8.48828 8.71094 8.48828C9.11198 8.48828 9.75911 7.64974 10.6523 5.97266C10.9076 5.44401 11.0078 4.97917 10.9531 4.57812C10.9167 4.17708 10.7161 3.91276 10.3516 3.78516C9.98698 3.65755 9.54948 3.7487 9.03906 4.05859Z" fill="#0F1B24"/>
+                            </svg>                                
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-9">
+                    <div class="row ms-xl-5 g-3">
+                        <div class="col-sm-6 col-md-4">
+                            <h3 class="logistec-sub-heading">Other Links</h3>
+                            <ul class="d-flex flex-column list-unstyled mb-0 logistec-links">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Logistic</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <h3 class="logistec-sub-heading">The Platform</h3>
+                            <ul class="d-flex flex-column list-unstyled mb-0 logistec-links">
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Our News</a></li>
+                                <li><a href="#">Transport</a></li>
+                                <li><a href="#">Frieght</a></li>
+                                <li><a href="#">Logistic</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="logistec-sub-heading">Contact Us</h3>
+                            <ul class="d-flex flex-column list-unstyled mb-0 logistec-links">
+                                <li><a href="#" class="d-flex justify-content-center justify-content-md-start"><i class="bi bi-telephone-forward me-2"></i> +088 65952 23366</a></li>
+                                <li><a href="#" class="d-flex justify-content-center justify-content-md-start"><i class="bi bi-envelope me-2"></i> Info.rrdevs@gmail.com</a></li>
+                                <li><a href="#" class="d-flex justify-content-center justify-content-md-start"><i class="bi bi-geo-alt me-2"></i> Address : 45 Anderson Road, East New York</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logistec-copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p class="mb-0">Copyright © <span>Logistec</span> |  Powered by <span>RRDevs</span></p>
+                    </div>
+                    <div class="col-md-6 mt-2 mt-md-0">
+                        <ul class="d-flex justify-content-md-end justify-content-center align-items-center list-unstyled mb-0 logistec-links">
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

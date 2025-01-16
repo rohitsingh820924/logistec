@@ -1,0 +1,1285 @@
+:root {
+    --Primary-color : #FE5624;
+    --white-color: #ffffff;
+    --dark-color: #0F1B24;
+    --gray-color: #757575;
+    --border-color: rgba(15, 27, 36, 0.1);
+    --gray-background: #F9F9F9;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../../assets/fonts/DMSans-Bold.woff') format('woff2'),
+    url('../../../assets/fonts/DMSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/DMSans-ExtraBold.woff2') format('woff2'),
+        url('../../assets/fonts/DMSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/DMSans-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/DMSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/DMSans-Light.woff2') format('woff2'),
+        url('../../assets/fonts/DMSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/DMSans-SemiBold.woff2') format('woff2'),
+        url('../../assets/fonts/DMSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DM Sans';
+    src: url('../../assets/fonts/DMSans-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/DMSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-SemiBold.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../assets/fonts/Poppins-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../assets/fonts/Poppins-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Poppins-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../assets/fonts/Poppins-SemiBold.woff2') format('woff2'),
+        url('../../assets/fonts/Poppins-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../assets/fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/Poppins-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../../assets/fonts/Poppins-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Poppins-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Common CSS */
+body {
+    font-family: 'DM Sans';
+}
+
+.btn-logistec-dark {
+    background-color: var(--dark-color);
+    padding: 14px 32px;
+    font-weight: 500;
+    color: var(--white-color);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.btn-logistec-dark:hover {
+    background-color: var(--dark-color);
+    opacity: 0.8;
+    color: var(--white-color);
+
+}
+.btn-logistec-white {
+    background-color: var(--white-color);
+    padding: 14px 32px;
+    font-weight: 500;
+    color: var(--dark-color);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.btn-logistec-transparent:hover {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border: 1px solid var(--dark-color);
+}
+
+.btn-logistec-transparent {
+    background-color: var(--white-color);
+    padding: 14px 32px;
+    border: 1px solid var(--border-color);
+    font-weight: 500;
+    color: var(--dark-color);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.btn-logistec-white:hover {
+    background-color: var(--white-color);
+    opacity: 0.8;
+    color: var(--dark-color);
+}
+
+.btn-logistec-primary {
+    background-color: var(--Primary-color);
+    padding: 14px 32px;
+    font-weight: 500;
+    color: var(--white-color);
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.btn-logistec-primary:hover {
+    background-color: var(--Primary-color);
+    opacity: 0.8;
+    color: var(--white-color);
+}
+
+.logistec-top-heading {
+    color: var(--Primary-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+.logistec-title {
+    color: var(--dark-color);
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+}
+.logistec-sub-heading {
+    color: var(--dark-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+.logistec-para {
+    color: var(--gray-color);
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'Poppins';
+}
+
+.logistec-section-padding {
+    padding-block: 120px;
+}
+
+.logistec-z-5 {
+    z-index: 5;
+}
+
+/* Header CSS Start */
+
+header.logistec-header {
+    position: fixed;
+    transition: all 0.3s ease;
+    top: 10px;
+    width: 100%;
+    z-index: 999;
+}
+
+header.logistec-header .logistec-main-header {
+    background-color: var(--white-color);
+    padding: 24px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+header.logistec-header .logistec-top-header {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+header.logistec-header .logistec-top-header ul li a {
+    font-size: 14px;
+    font-family: 'Poppins';
+    color: var(--white-color);
+    text-decoration: none;
+}
+header.logistec-header .logistec-top-header  .logistec-socials {
+    gap: 10px;
+}
+
+header.logistec-header .logistec-top-header  .logistec-socials a svg path {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    fill: var(--white-color);
+}
+
+header.logistec-header .logistec-top-header  .logistec-socials a:hover svg path {
+    opacity: 1;
+}
+
+header.logistec-header .logistec-main-header .logistec-logo {
+    width: 139px;
+}
+
+header.logistec-header .logistec-main-header .logistec-nav li a.logistec-nav-link {
+    color: var(--dark-color);
+    font-size: 16px;
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s ease;
+    padding-bottom: 4px;
+    font-family: 'Roboto';
+    text-decoration: none;
+}
+
+header.logistec-header .logistec-main-header .logistec-nav li:hover a.logistec-nav-link {
+    color: var(--Primary-color);
+}
+
+header.logistec-header .logistec-main-header .logistec-nav li a.logistec-nav-link.active {
+    border-bottom: 4px solid var(--Primary-color);
+}
+
+/* Header Scroll */
+header.logistec-header.logistec-scrolled .logistec-top-header {
+    visibility: hidden;
+    opacity: 0;
+}
+
+header.logistec-header.logistec-scrolled .logistec-main-header {
+    box-shadow: 0px 16px 40px 0px rgba(15, 27, 36, 0.10);
+    padding: 12px 24px;
+}
+
+
+
+header.logistec-header.logistec-scrolled {
+    top: -20px;
+}
+
+/* Header CSS End */
+
+/* Hero Section CSS Start */
+
+
+.logistec-hero-section {
+    background: url(../../assets/images/fast-and-trusted-transportation-service-img.png) center center no-repeat;
+    background-size: cover;
+    padding: 300px 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logistec-hero-section h1 {
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--white-color);
+}
+
+.logistec-hero-section p {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    color: var(--white-color);
+}
+.logistec-hero-section .btn-logistec-primary i {
+    transform: translate(0px, 2px);
+    transition: all 0.3s ease;
+}
+.logistec-hero-section .btn-logistec-primary:hover i {
+    transform: translate(10px, 2px);
+}
+/* Hero Section CSS End */
+
+/* Client Section CSS Start */
+.logistec-client-section .clientSlider {
+    border-block: 1px solid var(--border-color);
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.logistec-client-section .clientSlider .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.logistec-client-section .clientSlider .swiper-slide img {
+    width: auto;
+    max-height: 50px;
+    height: 100%;
+}
+
+/* Client Section CSS End */
+
+/* Outports Section CSS Start */
+.logistec-outports-section {
+    background: url(../../assets/images/why-should-you-choose-our-service-here-are-the-advantages-offer-img.png) center center no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logistec-outports-section .logistec-outports-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.logistec-outports-section .logistec-outports-slider .card {
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.logistec-outports-section .logistec-outports-slider .card .content {
+    position: relative;
+}
+.logistec-outports-section .logistec-outports-slider .card .content img {
+    position: absolute;
+    top: -10px;
+    width: auto;
+    height: 65px;
+    left: 10px;
+}
+.logistec-outports-section .logistec-outports-slider .card:hover {
+    box-shadow: 0px 16px 40px 0px rgba(15, 27, 36, 0.10);
+    border: 1px solid transparent;
+}
+
+.logistec-outports-section .logistec-outports-slider .card h4 {
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.logistec-outports-section .logistec-outports-slider .card:hover h4 {
+    color: var(--Primary-color);
+}
+
+.logistec-outports-section .logistec-outports-slider .card p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* Outports Section CSS End */
+
+/* About Section CSS Start */
+.logistec-about-section {
+    background-color: var(--gray-background);
+    position: relative;
+    overflow: hidden;
+}
+
+.logistec-about-section .slider .slide {
+    background: var(--white-color);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.logistec-about-section .slider .slide img {
+    width: 70px;
+}
+
+.logistec-about-section .slider .slide h4 {
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.logistec-about-section::before {
+    content: "";
+    position: absolute;
+    background: url(../../assets/images/forklift-img.png) left no-repeat;
+    background-size: contain;
+    left: 0;
+    bottom: 100px;
+    width: 187px;
+    height: 171px;
+    z-index: 0;
+}
+
+.logistec-about-section::after {
+    content: "";
+    position: absolute;
+    background: url(../../assets/images/bulet_shape-img.png) left no-repeat;
+    background-size: contain;
+    right: -120px;
+    top: calc(50% - 120px);
+    width: 240px;
+    height: 240px;
+    z-index: 0;
+}
+
+.logistec-about-section .logistec-doted-path {
+    position: absolute;
+    left: -100px;
+    top: 0;
+    width: 100%;
+    height: auto;
+    transform: rotate(-5deg);
+    z-index: 0;
+}
+/* About Section CSS End */
+
+/* Process Section CSS Start */
+
+.logistec-process-section .slider {
+    margin: 60px 90px 0px;
+}
+
+.logistec-process-section .slider .slide {
+    border-radius: 200px;
+    border: 1px solid var(--border-color);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 200px;
+    margin: auto;
+    width: 100%;
+}
+
+.logistec-process-section .slider .slide img {
+    width: 80px;
+}
+
+.logistec-process-section .slider .slide span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--Primary-color);
+    border-radius: 50px;
+    aspect-ratio: 1;
+    width: 50px;
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.logistec-process-section .slider .slide h4 {
+    font-size: 24px;
+}
+
+/* Process Section CSS End */
+
+/* Portfolio Section CSS Start */
+section.logistec-portfolio-section {
+    background: linear-gradient(180deg, var(--white-color) 55%, var(--gray-background) 45%);
+}
+
+.logistec-portfolio-section .portfolioSlider {
+    margin: 40px 75px;
+    overflow: hidden;
+}
+
+.logistec-portfolio-section .portfolioSlider .swiper-slide {
+    position: relative;
+}
+
+.logistec-portfolio-section .portfolioSlider .swiper-slide img {
+    width: 100%;
+}
+
+
+.logistec-portfolio-section .portfolioSlider .swiper-slide .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 30px;
+    color: var(--white-color);
+    background: linear-gradient(180deg, rgba(15, 27, 36, 0.00) 0%, #0F1B24 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.logistec-portfolio-section .portfolioSlider .swiper-slide .content a {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    aspect-ratio: 1;
+    font-size: 45px;
+    transition: all 0.3s ease;
+}
+
+.logistec-portfolio-section .portfolioSlider .swiper-slide .content span {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.logistec-portfolio-section .portfolioSlider .swiper-slide:hover .content {
+    opacity: 1;
+}
+
+.logistec-portfolio-section .swiper-portfolioSlider-prev,
+.logistec-portfolio-section .swiper-portfolioSlider-next {
+    background-color: var(--white-color);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    aspect-ratio: 1;
+    font-size: 14px;
+    color: var(--dark-color);
+    opacity: 1;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+.logistec-portfolio-section .swiper-portfolioSlider-prev:hover,
+.logistec-portfolio-section .swiper-portfolioSlider-next:hover {
+    background-color: var(--Primary-color);
+    border-color: var(--Primary-color);
+    color: var(--white-color);
+}
+
+/* Portfolio Section CSS End */
+
+/* Faq Section CSS Start */
+
+.logistec-faq-section {
+    background-color: var(--gray-background);
+}
+.logistec-faq-section .logistec-faq-slider {
+    margin-top: 30px;
+}
+
+.logistec-faq-section .logistec-faq-slider .accordion-button{
+    box-shadow: none;
+    background-color: var(--white-color);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.logistec-faq-section .logistec-faq-slider .accordion-button.accordion-button:not(.collapsed) {
+    color: var(--Primary-color);
+}
+
+.logistec-faq-section .logistec-faq-slider .accordion-item:has(.accordion-button.accordion-button:not(.collapsed)) {
+    box-shadow: 0px 3px 30px 0px rgba(15, 27, 36, 0.10);
+}
+
+.logistec-faq-section .logistec-faq-slider .accordion-button::after {
+    background: url('data:image/svg+xml,<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 1V13" stroke="%23757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M1 7L13 7" stroke="%23757575" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.logistec-faq-section .logistec-faq-slider .accordion-button.accordion-button:not(.collapsed)::after {
+    background: url('data:image/svg+xml,<svg width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1H13" stroke="%23FE5624" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* Faq Section CSS End */
+
+/* Team Section CSS Start */
+.logistec-team-section .card,
+.logistec-team-section .card .card-body h4 {
+    transition: all 0.3s ease;
+}
+
+.logistec-team-section .card:hover {
+    box-shadow: 0px 16px 40px 0px rgba(15, 27, 36, 0.10);
+}
+
+.logistec-team-section .card:hover .card-body {
+    border-color: transparent;
+}
+
+.logistec-team-section .card:hover .card-body h4 {
+    color: var(--Primary-color);
+}
+
+.logistec-team-section .card .card-body {
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    transition: all 0.3s ease;
+
+}
+.logistec-team-section .card .logistec-socials {
+    gap: 10px;
+}
+
+.logistec-team-section .card .logistec-socials li a {
+    width: 36px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: var(--white-color);
+}
+
+.logistec-team-section .card .logistec-socials li svg path {
+    fill: var(--gray-color);
+    transition: all 0.3s ease;
+}
+
+.logistec-team-section .card .logistec-socials li a:hover svg path {
+    fill: var(--white-color);
+}
+
+
+
+.logistec-team-section .card .logistec-socials li a:hover {
+    background-color: var(--Primary-color);
+    border-color: var(--Primary-color);
+}
+
+/* Team Section CSS End */
+
+/* Testimonial Section CSS Start */
+
+.logistec-testimonial-section {
+    background: url(../../assets/images/what-people-and-clients-think-about-us.png) center center no-repeat;
+    background-size: cover;
+}
+
+.logistec-testimonial-section h2 {
+    max-width: 730px;
+    margin: auto;
+}
+
+.logistec-testimonial-section .testimonialSlider{
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide {
+    background: var(--white-color);
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+}
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide:hover {
+    box-shadow: 0px 16px 40px 0px rgba(15, 27, 36, 0.10);   
+}
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide:hover h4 {
+    color: var(--Primary-color);  
+}
+
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide p {
+    margin: 30px 0;
+}
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide .content {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide .content .img-box {
+    width: 60px;
+    aspect-ratio: 1;
+}
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide .content .img-box img {
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide .content .content-body {
+    width: calc(100% - 70px);
+}
+
+.logistec-testimonial-section .testimonialSlider .swiper-slide .content .content-body h4 {
+    font-size: 22px;
+    margin-bottom: 0;
+    transition: all 0.3s ease;
+}
+
+/* Testimonial Section CSS End */
+
+/* News Section CSS Start */
+
+.logistec-news-section .card .card-body {
+    padding: 0;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.logistec-news-section .card .card-body:hover {
+    box-shadow: 0px 16px 40px 0px rgba(15, 27, 36, 0.10);
+}
+
+.logistec-news-section .card .card-body:hover h4 {
+    color: var(--Primary-color);
+}
+.logistec-news-section .card .card-body .body-top {
+    padding: 20px 30px;
+}
+
+.logistec-news-section .card .card-body .body-top h4 {
+    display: -webkit-box;           
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;        
+    overflow: hidden;             
+    text-overflow: ellipsis;
+    transition: all 0.3s ease;
+}
+
+.logistec-news-section .card .card-body .body-top ul {
+    color: var(--gray-color);
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.logistec-news-section .card .card-body .body-bottom { 
+    padding: 20px 30px;
+    border-top: 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.logistec-news-section .card .card-body .body-bottom a {
+    font-weight: 600;
+    display: inline-flex;
+}
+
+.logistec-news-section .card .card-body .body-bottom a i {
+    transform: translate(0px, 0px);
+    transition: all 0.3s ease;
+}
+
+.logistec-news-section .card .card-body .body-bottom a:hover i {
+    transform: translate(5px, 0px);
+}
+
+.logistec-news-section .card .card-body .body-bottom .box {
+    aspect-ratio: 1;
+    border-radius: 50px;
+    width: 50px;
+    background-color: #C4C4C4;
+}
+
+.logistec-news-section .card .card-body .body-bottom .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.logistec-news-section .btn-logistec-transparent i {
+    transform: translate(0px, 2px);
+    transition: all 0.3s ease;
+}
+.logistec-news-section .btn-logistec-transparent:hover i {
+    transform: translate(10px, 2px);
+}
+
+/* News Section CSS End */
+
+/* Contact Section CSS Start */
+
+.logistec-contact-section {
+    background: var(--dark-color);
+    position: relative;
+}
+.logistec-contact-section::before {
+    content: "";
+    position: absolute;
+    background: url(../../assets/images/footer-left-trns.png) left no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: calc(100% - 70px);
+    left: 0;
+    top: 35px;
+    z-index: 0;
+}
+.logistec-contact-section a {
+    background: var(--white-color);
+    color: var(--dark-color);
+}
+
+/* Contact Section CSS End */
+
+/* Footer Section CSS Start */
+
+footer.logistec-footer {
+    background-color: var(--gray-background);
+    padding-top: 100px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+footer.logistec-footer::before{
+    content: "";
+    position: absolute;
+    background: url(../../assets/images/truck_green-img.png) right no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 73px;
+    right: 83px;
+    top: calc(50% - 36px);
+    z-index: 0;
+}
+
+footer.logistec-footer .logistec-logo {
+    width: 139px;
+    margin-bottom: 20px;
+}
+
+footer.logistec-footer h3 {
+    margin-bottom: 18px;
+}
+
+footer.logistec-footer .logistec-socials {
+    margin-top: 28px;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+footer.logistec-footer .logistec-socials a svg path{
+    transition: all 0.3s ease;
+    fill: var(--dark-color);
+}
+
+footer.logistec-footer .logistec-socials a {
+    aspect-ratio: 1;
+    width: 36px;
+    display: flex;
+    border: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+footer.logistec-footer .logistec-socials a:hover {
+    border-color: var(--Primary-color);
+    background-color: var(--Primary-color);
+}
+
+footer.logistec-footer .logistec-socials a:hover svg path {
+    fill: var(--white-color);
+}
+footer.logistec-footer .logistec-links {
+    gap: 10px;
+}
+
+footer.logistec-footer .logistec-links li a {
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    font-family: 'Poppins';
+}
+
+footer.logistec-footer .logistec-links li a:hover {
+    color: var(--dark-color);
+}
+
+footer.logistec-footer .logistec-copyright {
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 60px;
+}
+
+footer.logistec-footer .logistec-copyright p {
+    font-size: 14px;
+    color: var(--gray-color);
+    font-family: 'Poppins';
+}
+
+footer.logistec-footer .logistec-copyright p span {
+    color: var(--dark-color);
+    font-weight: 500;
+}
+
+
+/* Responsive */
+@media (max-width: 575.98px) {
+    .logistec-news-section .card .card-body .body-top, .logistec-news-section .card .card-body .body-bottom {
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .logistec-hero-section h1 {
+        font-size: 32px;
+    }
+
+    .logistec-hero-section p,
+    footer.logistec-footer .logistec-links li a {
+        font-size: 14px;
+    }
+
+    body .logistec-hero-section {
+        padding: 150px 0 50px;
+    }
+
+    .logistec-title {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .logistec-team-section .slider {
+        overflow: auto;
+    }
+
+    .btn-logistec-primary,
+    .btn-logistec-dark,
+    .btn-logistec-white,
+    .btn-logistec-transparent {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    body .logistec-title {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .logistec-outports-section .logistec-outports-slider .card p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .logistec-about-section .slider .slide h4 {
+        font-size: 16px;
+    }
+
+    header.logistec-header.open .logistec-main-header .logistec-nav {
+        height: 301px;
+    }
+
+    .logistec-sub-heading, .logistec-faq-section .logistec-faq-slider .accordion-button,
+    .logistec-testimonial-section .testimonialSlider .swiper-slide .content .content-body h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    header.logistec-header .logistec-main-header .logistec-nav {
+        position: absolute;
+        background-color: var(--white-color);
+        right: 0;
+        top: 50px;
+        padding: 0px 20px;
+        height: 0px;
+        overflow: hidden;
+        box-shadow: 0px 20px 20px 0px rgba(15, 27, 36, 0.10);
+        transition: all 0.3s ease;
+    }
+
+    header.logistec-header .logistec-main-header,
+    header.logistec-header.logistec-scrolled .logistec-main-header {
+        padding: 12px;
+    }
+
+    header.logistec-header #memuBtn svg path {
+        transform: translate(0px, 0px);
+        transform-origin: 50% 50%;
+        transition: all 0.3s ease;
+    }
+
+    header.logistec-header.open #memuBtn svg path:first-of-type{
+        transform: rotate(45deg);
+        transform-origin: 50% 50%;
+        fill: var(--Primary-color);
+    }
+
+    header.logistec-header.open #memuBtn svg path:last-of-type {
+        transform-origin: 52% 56%;
+        transform: translate(-12px, 2px) rotate(-45deg);
+        fill: var(--Primary-color);
+    }
+
+    header.logistec-header.open #memuBtn svg path:nth-of-type(2) {
+        transform-origin: 55% 59%;
+        transform: translate(6px, 4px) rotate(-45deg);
+        fill: var(--Primary-color);
+    }
+    header.logistec-header .logistec-main-header .logistec-logo {
+        width: 100px;
+    }
+
+    header.logistec-header .logistec-main-header .logistec-nav li a.logistec-nav-link {
+        font-size: 14px;
+        display: block;
+    }
+
+    header.logistec-header.logistec-scrolled,
+    header.logistec-header {
+        top: 12px;
+    }
+
+    .logistec-section-padding {
+        padding-block: 30px;
+    }
+
+    .logistec-hero-section {
+        padding: 200px 0 100px;
+    }
+
+    .logistec-portfolio-section .portfolioSlider {
+        margin: 40px 0px;
+    }
+
+    .logistec-top-heading {
+        font-size: 14px;
+    }
+
+    .logistec-para {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .logistec-outports-section .logistec-outports-slider .card {
+        padding: 15px;
+    }
+
+    .logistec-portfolio-section .swiper-portfolioSlider-prev, .logistec-portfolio-section .swiper-portfolioSlider-next {
+        padding: 0px;
+        width: 30px;
+    }
+
+    .logistec-process-section .slider .slide span {
+        left: 20px;
+        top: 10px;
+        width: 32px;
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .logistec-process-section .slider {
+        margin: 30px 0 0;
+    }
+
+    footer.logistec-footer::before {
+        display: none;
+    }
+
+    footer.logistec-footer {
+        padding-top: 50px;
+    }
+
+    .logistec-about-section::before {
+        height: 100px;
+    }
+
+    footer.logistec-footer .logistec-copyright {
+        margin-top: 30px;
+    }
+
+    footer.logistec-footer .logistec-socials {
+        margin-bottom: 28px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .logistec-section-padding {
+        padding-block: 60px;
+    }
+
+    .logistec-hero-section h1 {
+        font-size: 60px;
+    }
+
+    .logistec-hero-section {
+        padding: 200px 0 100px;
+    }
+
+    header.logistec-header.open .logistec-main-header .logistec-nav {
+        height: 316px;
+    }
+
+    .logistec-title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .logistec-sub-heading,
+    .logistec-faq-section .logistec-faq-slider .accordion-button,
+    .logistec-testimonial-section .testimonialSlider .swiper-slide .content .content-body h4  {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .logistec-portfolio-section .portfolioSlider {
+        margin: 40px 40px;
+    }
+
+    .logistec-hero-section h1 {
+        font-size: 60px;
+    }
+
+    .logistec-title {
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .logistec-hero-section {
+        padding: 220px 0 100px;
+    }
+
+    .logistec-news-section .card .card-body .body-top,
+    .logistec-news-section .card .card-body .body-bottom {
+        padding: 15px;
+    }
+
+    .logistec-news-section .card .card-body .body-top h4 {
+        font-size: 20px;
+    }
+
+    .logistec-process-section .slider {
+        margin: 40px 0px 0px;
+    }
+
+    footer.logistec-footer::before {
+        top: auto;
+        bottom: 100px;
+    }
+
+    .logistec-about-section .slider .slide {
+        padding: 10px 10px;
+    }
+
+    .logistec-about-section .slider .slide h4 {
+        font-size: 16px;
+    }
+
+    footer.logistec-footer .logistec-para {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    .logistec-hero-section h1 {
+        font-size: 60px;
+    }
+
+    .logistec-hero-section {
+        padding: 230px 0 100px;
+    }
+
+    .logistec-section-padding {
+        padding-block: 80px;
+    }
+
+    .logistec-title {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .logistec-process-section .slider {
+        margin: 40px 60px 0px;
+    }
+
+    footer.logistec-footer::before {
+        top: auto;
+        bottom: 100px;
+    }
+}
+
+@media (min-width: 1400px) { 
+    .logistec-about-section .logistec-doted-path {
+        width: auto;
+        height: 120%;
+    }
+}
